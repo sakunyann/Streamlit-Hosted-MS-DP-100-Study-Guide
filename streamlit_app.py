@@ -3,10 +3,10 @@ from PIL import Image
 
 
 st.set_page_config(page_title="Microsoft Azure Data Scientist Associate Certification Study Guide",
-                   page_icon=":memo:"
+                   page_icon=":memo:",
                    layout="wide")
 
-st.subheader(Course: Designing and implementing a data science solution on Azure)
+st.subheader("Course: Designing and implementing a data science solution on Azure")
 
 st.write("")
 
@@ -54,7 +54,7 @@ module1_1 = "./content/Module1.1"
 #module1_2 = "./content/Module1.2"
 #module1_3 = "./content/Module1.3"
 
-st.sidebar.write("[Design a data ingestion strategy for machine learning projects](%s)" % module1_1")
+st.sidebar.write("[Design a data ingestion strategy for machine learning projects](%s)" % module1_1)
 
 st.sidebar.subheader("Explore and configure the Azure Machine Learning workspace")
 st.sidebar.subheader("Experiment with Azure Machine Learning")
