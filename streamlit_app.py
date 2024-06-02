@@ -27,7 +27,7 @@ md_files = sorted(
 
 placeholder = st.empty()
 with placeholder:
-    st.write("Module {module}").format(module=1)
+    st.write("Module {module}").format(1)
 placeholder.empty()
 
 # Logo and Navigation
