@@ -49,19 +49,17 @@ with st.expander("Course Overview"):
 # Sidebar
 
 st.sidebar.header("Modules")
+st.sidebar.subheader("Design a machine learning solution")
 module1_1 = "./content/Module1.1"
 #module1_2 = "./content/Module1.2"
-#module1_3 = "./content/Module1.2"
+#module1_3 = "./content/Module1.3"
 
+st.sidebar.write("[Design a data ingestion strategy for machine learning projects](%s)" % module1_1")
 
-
-st.sidebar.subheader("")
-st.sidebar.markdown(
-    """
-- [Microsoft Certified: Azure Data Scientist Associate](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-scientist/?practice-assessment-type=certification) (About the course)
-- [Streamlit Documentation](https://docs.streamlit.io/) (Check out Streamlit documentation here)
-
-"""
-)
+st.sidebar.subheader("Explore and configure the Azure Machine Learning workspace")
+st.sidebar.subheader("Experiment with Azure Machine Learning")
+st.sidebar.subheader("Optimize model training with Azure Machine Learning")
+st.sidebar.subheader("Manage and review models in Azure Machine Learning")
+st.sidebar.subheader("Deploy and consume models with Azure Machine Learning")
 
 
