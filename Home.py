@@ -7,18 +7,11 @@ st.set_page_config(page_title="DP 100 Study Guide",
                    layout="wide")
 
 st.header("Microsoft Azure Data Scientist Associate Certification Study Guide")
-st.subheader("Course: Designing and implementing a data science solution on Azure")
+st.subheader("Course DP-100T01-A: Designing and implementing a data science solution on Azure")
 
 st.write("")
 
-st.write("More info at:")
-st.markdown(
-    """
-- [Microsoft Certified: Azure Data Scientist Associate](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-scientist/?practice-assessment-type=certification) (About the course)
-- [Streamlit Documentation](https://docs.streamlit.io/) (Check out Streamlit documentation here)
 
-"""
-)
 
 st.subheader("")
 
@@ -44,15 +37,20 @@ with st.expander("Course Overview"):
     - Explore data and train models
     - Prepare a model for deployment
     - Deploy and retrain a model
+
+    [Source](https://learn.microsoft.com/en-us/training/courses/dp-100t01#course-syllabus)
     """
     )
 
 
 # Sidebar
 
-#st.sidebar.header("Module 1: Design a machine learning solution")
-#st.sidebar.subheader("Module 2: Explore and configure the Azure Machine Learning workspace")
-#st.sidebar.subheader("Module 3: Experiment with Azure Machine Learning")
-#st.sidebar.subheader("Optimize model training with Azure Machine Learning")
-#st.sidebar.subheader("Manage and review models in Azure Machine Learning")
-#st.sidebar.subheader("Deploy and consume models with Azure Machine Learning")
+st.sidebar.subheader("More info at:")
+st.sidebar.markdown(
+    """
+- [Microsoft Certified: Azure Data Scientist Associate](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-scientist/?practice-assessment-type=certification) (About the course)
+- [Streamlit Documentation](https://docs.streamlit.io/) (Check out Streamlit documentation here)
+
+"""
+)
+
