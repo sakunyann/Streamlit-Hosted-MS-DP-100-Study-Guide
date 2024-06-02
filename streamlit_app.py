@@ -6,40 +6,34 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 
+
 st.set_page_config(layout="wide")
 
-query_params = st.query_params.to_dict()
-
-
 def update_params():
-    st.query_params(
-        course=st.session_state.module)
-
+    st.query_params.course = st.session_state.module
 
 def format_module(label):
     return ("Module {module}").format(module=int(re.search(r'\d+', label).group()))
 
-
 md_files = sorted(
-    [int(x.strip("Module").strip(".md")) for x in glob.glob1(f"content", "*.md")]
+    [int(x.strip("Module").strip(".md")) for x in glob.glob.glob("content/*.md")]
 )
 
 placeholder = st.empty()
 with placeholder:
-    st.write("Module {module}").format(module=1.1)
+    st.write(f"Module {1.1}")
 placeholder.empty()
 
 # Logo and Navigation
 col1, col2, col3 = st.columns((1, 4, 1))
-#with col2:
-    #st.image(Image.open("image.png"))
-
 
 modules_list = [f"Module{x}" for x in md_files]
 
+query_params = st.query_params.to_dict()
+
 if query_params:
     try:
-        selected_module = query_params["course"][0]
+        selected_module = query_params["course"]
         if selected_module in modules_list:
             st.session_state.module = selected_module
     except KeyError:
@@ -49,6 +43,7 @@ selected_module = st.selectbox(
     "Start Studying 👇", modules_list, key="Module", on_change=update_params,
     format_func=format_module
 )
+
 
 with st.expander("Course Overview"):
     st.markdown(
