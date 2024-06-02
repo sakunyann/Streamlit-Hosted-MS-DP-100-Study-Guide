@@ -8,7 +8,7 @@ from PIL import Image
 
 st.set_page_config(layout="wide")
 
-query_params = st.query_params()
+query_params = st.query_params.to_dict()
 
 
 def update_params():
@@ -26,7 +26,7 @@ md_files = sorted(
 
 placeholder = st.empty()
 with placeholder:
-    st.write("Module {module}").format(module=1)
+    st.write("Module {module}").format(module=1.1)
 placeholder.empty()
 
 # Logo and Navigation
