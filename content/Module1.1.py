@@ -1,3 +1,6 @@
+import streamlit as st
+
+st.markdown("""
 # Design a machine learning solution
 
 ## Design a data ingestion strategy for machine learning projects
@@ -6,3 +9,5 @@
 <br> 
 
 ## Unit 1/7 - Introduction
+
+""")
