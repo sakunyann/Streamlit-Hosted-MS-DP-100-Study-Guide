@@ -8,11 +8,11 @@ from PIL import Image
 
 st.set_page_config(layout="wide")
 
-query_params = st.experimental_get_query_params()
+query_params = st.query_params()
 
 
 def update_params():
-    st.experimental_set_query_params(
+    st.query_params(
         course=st.session_state.module)
 
 
