@@ -29,7 +29,7 @@ col1, col2, col3 = st.columns((1, 4, 1))
 
 modules_list = [f"Module{x}" for x in md_files]
 
-#query_params = st.query_params.to_dict()
+query_params = st.query_params.to_dict()
 
 if query_params:
     try:
