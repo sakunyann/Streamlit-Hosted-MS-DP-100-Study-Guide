@@ -196,6 +196,7 @@ with st.expander("Unit 6/7 - Knowledge Check"):
     >>> **Azure Data Lake Storage**
     > : You can store CSV files in a data lake without having any capacity constraints.
 
+    [Source](https://learn.microsoft.com/en-us/training/modules/design-data-ingestion-strategy-for-machine-learning-projects/6-knowledge-check)
     """
     )
 
@@ -203,6 +204,13 @@ with st.expander("Unit 7/7 - Summary"):
     st.markdown(
         """
     
+    #### In this module, you've learned how to:
+
+    > 1. Identify your data source and format.
+    > 2. Choose how to serve data to machine learning workflows.
+    > 3. Design a data ingestion solution.
+
+    [Source](https://learn.microsoft.com/en-us/training/modules/design-data-ingestion-strategy-for-machine-learning-projects/7-summary)
     """
     )
 
@@ -217,6 +225,37 @@ st.markdown("""
 )
 
 
+with st.expander("Unit 1/7 - Introduction"):
+    st.markdown(
+        """
+
+    [Source]()
+    """
+    )
+
+with st.expander("Unit 2/7 - Identify machine learning tasks"):
+    st.markdown(
+        """
+
+    [Source]()
+    """
+    )
+
+with st.expander("Unit 3/7 - Choose a service to train a machine learning model"):
+    st.markdown(
+        """
+
+    [Source]()
+    """
+    )
+
+with st.expander("Unit 4/7 - Decide between compute options"):
+    st.markdown(
+        """
+
+    [Source]()
+    """
+    )
 
 
 with st.expander("Unit 5/7 - Exercise: Design a model training strategy"):
@@ -235,5 +274,23 @@ with st.expander("Unit 5/7 - Exercise: Design a model training strategy"):
     | 4     |
     | 5     |
 
+
+    [Source]()
+    """
+    )
+
+with st.expander("Unit 6/7 - Knowledge Check"):
+    st.markdown(
+        """
+
+    [Source]()
+    """
+    )
+
+with st.expander("Unit 7/7 - Summary"):
+    st.markdown(
+        """
+
+    [Source]()
     """
     )
