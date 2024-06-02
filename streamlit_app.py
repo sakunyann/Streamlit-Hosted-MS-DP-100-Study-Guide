@@ -49,15 +49,15 @@ with st.expander("Course Overview"):
 
 # Sidebar
 
-st.sidebar.header("Design a machine learning solution")
-module1_1 = "./content/Module1.1"
+st.sidebar.header("Module 1: Design a machine learning solution")
+module1_1 = "./Module1.1"
 #module1_2 = "./content/Module1.2"
 #module1_3 = "./content/Module1.3"
 
-st.sidebar.write("[Module 1. Design a data ingestion strategy for machine learning projects](%s)" % module1_1)
+st.sidebar.write("[1.1 Design a data ingestion strategy for machine learning projects](%s)" % module1_1 )
 
-#st.sidebar.subheader("Explore and configure the Azure Machine Learning workspace")
-#st.sidebar.subheader("Experiment with Azure Machine Learning")
+st.sidebar.subheader("Module 2: Explore and configure the Azure Machine Learning workspace")
+#st.sidebar.subheader("Module 3: Experiment with Azure Machine Learning")
 #st.sidebar.subheader("Optimize model training with Azure Machine Learning")
 #st.sidebar.subheader("Manage and review models in Azure Machine Learning")
 #st.sidebar.subheader("Deploy and consume models with Azure Machine Learning")

@@ -1,5 +1,11 @@
 import streamlit as st
 
+st.set_page_config(page_title="DP 100 - 1.1",
+                   page_icon=":memo:",
+                   layout="wide")
+
+st.header("header")
+
 st.markdown("""
 # Design a machine learning solution
 
@@ -10,4 +16,5 @@ st.markdown("""
 
 ## Unit 1/7 - Introduction
 
-""")
+"""
+)
