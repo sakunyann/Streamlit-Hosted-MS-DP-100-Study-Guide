@@ -2,10 +2,11 @@ import streamlit as st
 from PIL import Image
 
 
-st.set_page_config(page_title="Microsoft Azure Data Scientist Associate Certification Study Guide",
+st.set_page_config(page_title="DP 100 Study Guide",
                    page_icon=":memo:",
                    layout="wide")
 
+st.header("Microsoft Azure Data Scientist Associate Certification Study Guide")
 st.subheader("Course: Designing and implementing a data science solution on Azure")
 
 st.write("")
@@ -48,16 +49,15 @@ with st.expander("Course Overview"):
 
 # Sidebar
 
-st.sidebar.header("Modules")
-st.sidebar.subheader("Design a machine learning solution")
+st.sidebar.header("Design a machine learning solution")
 module1_1 = "./content/Module1.1"
 #module1_2 = "./content/Module1.2"
 #module1_3 = "./content/Module1.3"
 
-st.sidebar.write("[Design a data ingestion strategy for machine learning projects](%s)" % module1_1)
+st.sidebar.write("[Module 1. Design a data ingestion strategy for machine learning projects](%s)" % module1_1)
 
-st.sidebar.subheader("Explore and configure the Azure Machine Learning workspace")
-st.sidebar.subheader("Experiment with Azure Machine Learning")
-st.sidebar.subheader("Optimize model training with Azure Machine Learning")
-st.sidebar.subheader("Manage and review models in Azure Machine Learning")
-st.sidebar.subheader("Deploy and consume models with Azure Machine Learning")
+#st.sidebar.subheader("Explore and configure the Azure Machine Learning workspace")
+#st.sidebar.subheader("Experiment with Azure Machine Learning")
+#st.sidebar.subheader("Optimize model training with Azure Machine Learning")
+#st.sidebar.subheader("Manage and review models in Azure Machine Learning")
+#st.sidebar.subheader("Deploy and consume models with Azure Machine Learning")
