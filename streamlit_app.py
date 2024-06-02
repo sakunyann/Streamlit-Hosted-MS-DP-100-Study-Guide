@@ -16,7 +16,7 @@ def format_module(label):
     return ("Module {module}").format(module=int(re.search(r'\d+', label).group()))
 
 md_files = sorted(
-    [int(x.strip("Module").strip(".md")) for x in glob.glob.glob("content/*.md")]
+    [int(x.strip("Module").strip(".md")) for x in glob.glob("content/*.md")]
 )
 
 placeholder = st.empty()
