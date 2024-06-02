@@ -22,7 +22,7 @@ def format_module(label):
 
 
 md_files = sorted(
-    [int(x.strip("Module").strip(".md"), "*.md")]
+    [int(x.strip("Module").strip(".md")) for x in glob.glob1(f"content", "*.md")]
 )
 
 placeholder = st.empty()
