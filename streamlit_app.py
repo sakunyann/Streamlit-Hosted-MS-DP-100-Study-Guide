@@ -21,7 +21,7 @@ md_files = sorted(
 
 placeholder = st.empty()
 with placeholder:
-    st.write(f"Module {1.1}")
+    st.write(f"Module {101}")
 placeholder.empty()
 
 # Logo and Navigation
