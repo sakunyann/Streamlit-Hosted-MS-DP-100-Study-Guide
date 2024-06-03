@@ -229,15 +229,30 @@ with st.expander("Unit 1/7 - Introduction"):
     st.markdown(
         """
 
-    [Source]()
+    ### Learning objectives
+    >####In this module, you'll learn how to:
+
+    > - Identify machine learning tasks.
+    > - Choose a service to train a model.
+    > - Choose between compute options.
+
+    [Source](https://learn.microsoft.com/en-us/training/modules/design-machine-learning-model-training-solution/1-introduction)
     """
     )
 
 with st.expander("Unit 2/7 - Identify machine learning tasks"):
     st.markdown(
         """
+    ####  6 steps to plan, train, deploy, and monitor the model:
 
-    [Source]()
+    > 1. Define the problem: Decide on what the model should predict and when it's successful.
+    > 2. Get the data: Find data sources and get access.
+    > 3. Prepare the data: Explore the data. Clean and transform the data based on the model's requirements.
+    > 4. Train the model: Choose an algorithm and hyperparameter values based on trial and error.
+    > 5. Integrate the model: Deploy the model to an endpoint to generate predictions.
+    > 6. Monitor the model: Track the model's performance.
+
+    [Source](https://learn.microsoft.com/en-us/training/modules/design-machine-learning-model-training-solution/2-identify-tasks)
     """
     )
 
