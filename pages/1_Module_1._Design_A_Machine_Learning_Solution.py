@@ -273,7 +273,35 @@ with st.expander("Unit 3/7 - Choose a service to train a machine learning model"
     st.markdown(
         """
 
-    [Source]()
+    ###Which service you use depends on factors like:
+    > - What type of model you need to train.
+    > - Whether you need full control over model training.
+    > - How much time you want to invest in model training.
+    > - Which services are already within your organization.
+    > - Which programming language you’re comfortable with.
+
+    ---
+
+    ####When training machine learning models with Azure, there are many scalable and cost-effective compute options:
+
+    | Service                     | Main Use                                             | Other Info                    | Learn More                                     |
+    |-----------------------------|------------------------------------------------------|-------------------------------|---------------------------------------------------|
+    | **Azure Machine Learning**  | Train and manage machine learning models.            | Work with Studio (UI-based), or manage machine learning workloads with Python SDK, or CLI for a code-first experience. | [Azure Machine Learning](https://learn.microsoft.com/en-us/azure/machine-learning/overview-what-is-azure-machine-learning) |
+    | **Azure Databricks**        | Data analytics platform to use with data engineering and data science. | Uses distributed Spark compute to efficiently process data. Can train and manage models with Azure Databricks or by integrating Azure Databricks with another service like Azure Machine Learning. | [Azure Databricks](https://learn.microsoft.com/en-us/azure/databricks/what-is-databricks) |
+    | **Azure Synapse Analytics** | Analytics service, which uses distributed compute for big data analytics. | Designed to ingest and transform data at scale but also includes several machine learning capabilities. Train models on Spark pools with MLlib or use the integrated Automated Machine Learning feature from Azure Machine Learning. | [Azure Synapse Analytics](https://learn.microsoft.com/en-us/azure/synapse-analytics/overview-what-is) / [machine learning capabilities in Azure Synapse Analytics](https://learn.microsoft.com/en-us/azure/synapse-analytics/machine-learning/what-is-machine-learning) |
+    | **Azure AI Services**       | Collection of prebuilt machine learning models for machine learning tasks like object detection in images. | Models are offered as an application programming interface (API), to easily integrate model with your application. Some models are customizeable with own training data which saves time and resources to train a new model from scratch. | [Azure AI Services](https://learn.microsoft.com/en-us/azure/cognitive-services/what-are-cognitive-services) |
+
+    ---
+
+    ### Understand the difference between services
+    > - Use **Azure AI Services** whenever one of the customizable prebuilt models suits your requirements, to **save time and effort.**
+    > - Use **Azure Synapse Analytics** or **Azure Databricks** if you want to keep all data-related (data engineering and data science) **projects within the same service.**
+    > - Use **Azure Synapse Analytics** or **Azure Databricks** if you need distributed **compute** for working with large datasets (datasets are large when you experience capacity constraints with standard compute). You'll need to work with **PySpark** to use the distributed compute.
+    > - Use **Azure Machine Learning** or **Azure Databricks** when you want full control over model training and management.
+    > - Use **Azure Machine Learning** when **Python** is your preferred programming language.
+    > - Use **Azure Machine Learning** when you want an **intuitive user interface** to manage your machine learning lifecycle.
+
+    [Source](https://learn.microsoft.com/en-us/training/modules/design-machine-learning-model-training-solution/3-choose-service-train)
     """
     )
 
