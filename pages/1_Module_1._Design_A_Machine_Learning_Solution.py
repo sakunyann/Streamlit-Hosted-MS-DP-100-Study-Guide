@@ -32,7 +32,6 @@ with st.expander("Unit 1/7 - Introduction"):
     """
     )
 
-
 with st.expander("Unit 2/7 - Identify your data source and format"):
     st.markdown(
         """
@@ -84,7 +83,6 @@ with st.expander("Unit 2/7 - Identify your data source and format"):
     """
     )
 
-
 with st.expander("Unit 3/7 - Choose how to serve data to machine learning workflows"):
     st.markdown(
         """
@@ -119,8 +117,6 @@ with st.expander("Unit 3/7 - Choose how to serve data to machine learning workfl
 
     """
     )
-
-
 
 with st.expander("Unit 4/7 - Design a data ingestion solution"):
     st.markdown(
@@ -162,7 +158,6 @@ with st.expander("Unit 4/7 - Design a data ingestion solution"):
     """
     )
 
-
 with st.expander("Unit 5/7 - Exercise: Design a data ingestion strategy"):
     st.markdown(
         """
@@ -183,7 +178,6 @@ with st.expander("Unit 5/7 - Exercise: Design a data ingestion strategy"):
     [Source](https://learn.microsoft.com/en-us/training/modules/design-data-ingestion-strategy-for-machine-learning-projects/5-exercise)
     """
     )
-
 
 with st.expander("Unit 6/7 - Knowledge Check"):
     st.markdown(
@@ -244,13 +238,32 @@ with st.expander("Unit 2/7 - Identify machine learning tasks"):
     st.markdown(
         """
     ####  6 steps to plan, train, deploy, and monitor the model:
+    > 1. **Define the problem:** Decide on what the model should predict and when it's successful.
+    > 2. **Get the data:** Find data sources and get access.
+    > 3. **Prepare the data:** Explore the data. Clean and transform the data based on the model's requirements.
+    > 4. **Train the model:** Choose an algorithm and hyperparameter values based on trial and error.
+    > 5. **Integrate the model:** Deploy the model to an endpoint to generate predictions.
+    > 6. **Monitor the model:** Track the model's performance.
 
-    > 1. Define the problem: Decide on what the model should predict and when it's successful.
-    > 2. Get the data: Find data sources and get access.
-    > 3. Prepare the data: Explore the data. Clean and transform the data based on the model's requirements.
-    > 4. Train the model: Choose an algorithm and hyperparameter values based on trial and error.
-    > 5. Integrate the model: Deploy the model to an endpoint to generate predictions.
-    > 6. Monitor the model: Track the model's performance.
+    ---
+
+    > ##### Define the problem the model will solve by understanding:
+    > - What the **model’s output** should be.
+    > - What **type of machine learning task** you’ll use.
+    > - What **criteria** makes a model successful.
+
+    ---
+
+    > ##### The data on hand + expected output of the model = machine learning task = which algorithm to use
+    > 1. **Classification:** Predict a categorical value.
+    > 2. **Regression:** Predict a numerical value.
+    > 3. **Time-series forecasting:** Predict future numerical values based on time-series data.
+    > 4. **Computer vision:** Classify images or detect objects in images.
+    > 5. **Natural language processing (NLP):** Extract insights from text.
+
+    - Train model: use a set of algorithms
+    - Evaluate model: calculate performance metrics including accuracy or precision
+    - Metrics: depends on the task the model needs to perform and helps determine whether model is successful
 
     [Source](https://learn.microsoft.com/en-us/training/modules/design-machine-learning-model-training-solution/2-identify-tasks)
     """
