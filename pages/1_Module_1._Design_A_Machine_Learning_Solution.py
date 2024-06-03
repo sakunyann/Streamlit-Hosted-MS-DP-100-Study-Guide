@@ -273,7 +273,7 @@ with st.expander("Unit 3/7 - Choose a service to train a machine learning model"
     st.markdown(
         """
 
-    ###Which service you use depends on factors like:
+    ### Which service you use depends on factors like:
     > - What type of model you need to train.
     > - Whether you need full control over model training.
     > - How much time you want to invest in model training.
@@ -282,7 +282,7 @@ with st.expander("Unit 3/7 - Choose a service to train a machine learning model"
 
     ---
 
-    ####When training machine learning models with Azure, there are many scalable and cost-effective compute options:
+    #### When training machine learning models with Azure, there are many scalable and cost-effective compute options:
 
     | Service                     | Main Use                                             | Other Info                    | Learn More                                     |
     |-----------------------------|------------------------------------------------------|-------------------------------|---------------------------------------------------|
