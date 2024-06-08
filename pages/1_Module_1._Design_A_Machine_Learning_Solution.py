@@ -384,7 +384,15 @@ with st.expander("Unit 6/7 - Knowledge Check"):
     st.markdown(
         """
 
-    [Source]()
+    1. A data scientist wants to train a machine learning model to predict the sales of supermarket items to adjust the supply to the projected demand. What type of machine learning task will the model perform?
+    >>> **Time-series forecasting**
+    > :  Time-series forecasting is used to predict future sales.
+
+    2. The data scientist received data to train a model to predict the sales of supermarket items. The data scientist wants to quickly iterate over several featurization and algorithm options by only providing the data and editing some configurations. Which tool would best be used in this situation?
+    >>> **Automated Machine Learning**
+    > : You'll only have to provide the data and Automated Machine Learning will iterate over different featurization approaches and algorithms
+
+    [Source](https://learn.microsoft.com/en-us/training/modules/design-machine-learning-model-training-solution/6-knowledge-check)
     """
     )
 
@@ -392,6 +400,14 @@ with st.expander("Unit 7/7 - Summary"):
     st.markdown(
         """
 
-    [Source]()
+    #### In this module, you've learned how to:
+    > - Identify machine learning tasks.
+    > - Choose a service to train a model.
+    > - Choose between compute options.
+
+    [Source](https://learn.microsoft.com/en-us/training/modules/design-machine-learning-model-training-solution/7-summary)
     """
     )
+
+
+    
