@@ -308,8 +308,53 @@ with st.expander("Unit 3/7 - Choose a service to train a machine learning model"
 with st.expander("Unit 4/7 - Decide between compute options"):
     st.markdown(
         """
+    > - Choose most suitable compute for model training
+    > - Monitor utilization to **know when to scale up or down** to save on on time and costs.
 
-    [Source]()
+    ### CPU or GPU
+    | Type                                | Use Case                                                           | Monitor for                   | Adjust                                    | 
+    |-------------------------------------|--------------------------------------------------------------------|-------------------------------|---------------------------------------------------|
+    | **central processing unit (CPU)**   | Smaller **tabular** datasets                                       | Model taking long time with largest CPU, even after preparing with libraries like RAPIDs (developed by NVIDIA) which allows efficient data prep and model training with larger tabular datasets | Consider GPU |
+    | **graphics processing unit (GPU)**  | **unstructured** data like images or text, **larger tabular data** |GPU is more expensive than CPU. If not much usage required to train model | Switch to CPU |
+
+    ---
+
+    ### General purpose or memory optimized
+    | Type                  | Situation                                | Ideal for                             |
+    |-----------------------|------------------------------------------|---------------------------------------|
+    | **General purpose:**  | Have a **balanced CPU-to-memory ratio.** | testing and development with **smaller** datasets. |
+    | **Memory optimized:** | Have a **high memory-to-CPU ratio.**     | **in-memory analytics,** which is ideal when you have **larger datasets** or when you're working in notebooks. |
+    > - Size of Azure Machine Learning compute = **virtual machine size**
+
+    ---
+
+    ### Spark
+    > - Offered by Azure Synapse Analytics, Azure Databricks, etc
+    #### Spark compute/clusters use the same sizing as virtual machines in Azure but **distribute the workloads**
+    > - Parts of the workload can be executed in parallel
+    > - Reduced processing time
+
+    #### Spark cluster components: driver node and worker nodes
+    > 1. code communicates with driver node
+    > 2. work is distributed across worker nodes
+    > 3. work is summarized and the driver node communicates the result
+
+    #### When creating Spark Cluster, choose:
+    > - CPU or GPU compute
+    > - virtual machine size for the driver and worker nodes
+
+    ---
+
+    ### Monitor the compute utilization
+    #### Monitor how long it takes to train the model 
+    > - If model takes too long :arrow_right: choose GPU over CPU
+    
+    #### How much **compute** is used to execute code
+    > - Know whether to scale compute up or down
+
+    - **Alternatively:** Use Spark compute to distribute model training (may require rewriting training scripts)
+
+    [Source](https://learn.microsoft.com/en-us/training/modules/design-machine-learning-model-training-solution/4-decide-between-compute-options)
     """
     )
 
@@ -331,7 +376,7 @@ with st.expander("Unit 5/7 - Exercise: Design a model training strategy"):
     | 5     |
 
 
-    [Source]()
+    [Source](https://learn.microsoft.com/en-us/training/modules/design-machine-learning-model-training-solution/5-exercise)
     """
     )
 
