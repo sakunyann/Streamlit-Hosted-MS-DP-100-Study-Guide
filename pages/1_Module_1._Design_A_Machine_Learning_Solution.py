@@ -224,7 +224,7 @@ with st.expander("Unit 1/7 - Introduction"):
         """
 
     ### Learning objectives
-    >####In this module, you'll learn how to:
+    >#### In this module, you'll learn how to:
 
     > - Identify machine learning tasks.
     > - Choose a service to train a model.
@@ -422,9 +422,13 @@ with st.expander("Unit 1/5 - Introduction"):
     st.markdown(
         """
 
-   
+    ### Learning objectives
+    >#### In this module, you'll learn how to:
 
-    [Source]()
+    > - Understand how a model will be consumed.
+    > - Decide whether to deploy your model to a real-time or batch endpoint.
+
+    [Source](https://learn.microsoft.com/en-us/training/modules/design-model-deployment-solution/1-introduction)
     """
     )
 
