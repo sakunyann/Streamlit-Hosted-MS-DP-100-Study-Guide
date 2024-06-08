@@ -444,7 +444,18 @@ with st.expander("Unit 2/5 - Understand how model will be consumed"):
     > 5. :sparkles: **Integrate the model:** Deploy the model to an endpoint to generate predictions. :sparkles:
     > 6. **Monitor the model:** Track the model's performance.
 
+    ---
 
+    ### Deploy a model to an endpoint
+    > **Endpoint**
+    > : can be a web address that an application can call to get a message back.
+    > #### With **Azure Machine Learning,** you can deploy your model to an endpoint.
+    > - Get real-time and batch predictions.
+
+    | Endpoint Option               | How it works                          | Use Case                                              | Example                                       |
+    |-------------------------------|---------------------------------------|-------------------------------------------------------|---------------------------------------------|
+    | Get **real-time** predictions | Model scores new data as it comes in. | Often needed for model used by application such as a mobile app or website. | Model recommending additional products to a customer on a website based on customer's selection. |
+    | Get **batch** predictions     | Model scores new data in batches.     | When needing to save results as a file or in a database. | Predicting product sales for each future week to ensure supply is sufficient to meet expected demand.             |
 
     [Source](https://learn.microsoft.com/en-us/training/modules/design-model-deployment-solution/2-understand-how-model-consumed)
     """
