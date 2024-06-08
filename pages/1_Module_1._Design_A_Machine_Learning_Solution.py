@@ -37,9 +37,9 @@ with st.expander("Unit 2/7 - Identify your data source and format"):
         """
     ### Six steps to plan, train, deploy, and monitor the model:
 
-    > 1. **Define the problem:** Decide on what the model should predict and when it's successful.
-    > 2. **Get the data:** Find data sources and get access.
-    > 3. **Prepare the data:** Explore the data. Clean and transform the data based on the model's requirements.
+    > 1. **Define the problem:** Decide on what the model should predict and when it's successful. 
+    > 2. :sparkles: **Get the data:** Find data sources and get access. :sparkles:
+    > 3. :sparkles: **Prepare the data:** Explore the data. Clean and transform the data based on the model's requirements. :sparkles:
     > 4. **Train the model:** Choose an algorithm and hyperparameter values based on trial and error.
     > 5. **Integrate the model:** Deploy the model to an endpoint to generate predictions.
     > 6. **Monitor the model:** Track the model's performance.
@@ -238,10 +238,10 @@ with st.expander("Unit 2/7 - Identify machine learning tasks"):
     st.markdown(
         """
     ####  6 steps to plan, train, deploy, and monitor the model:
-    > 1. **Define the problem:** Decide on what the model should predict and when it's successful.
+    > 1. :sparkles: **Define the problem:** Decide on what the model should predict and when it's successful. :sparkles:
     > 2. **Get the data:** Find data sources and get access.
     > 3. **Prepare the data:** Explore the data. Clean and transform the data based on the model's requirements.
-    > 4. **Train the model:** Choose an algorithm and hyperparameter values based on trial and error.
+    > 4. :sparkles: **Train the model:** Choose an algorithm and hyperparameter values based on trial and error. :sparkles:
     > 5. **Integrate the model:** Deploy the model to an endpoint to generate predictions.
     > 6. **Monitor the model:** Track the model's performance.
 
@@ -436,9 +436,17 @@ with st.expander("Unit 2/5 - Understand how model will be consumed"):
     st.markdown(
         """
 
-   
+    ####  6 steps to plan, train, deploy, and monitor the model:
+    > 1. **Define the problem:** Decide on what the model should predict and when it's successful.
+    > 2. **Get the data:** Find data sources and get access.
+    > 3. **Prepare the data:** Explore the data. Clean and transform the data based on the model's requirements.
+    > 4. **Train the model:** Choose an algorithm and hyperparameter values based on trial and error.
+    > :sparkles: 5. **Integrate the model:** Deploy the model to an endpoint to generate predictions. :sparkles:
+    > 6. **Monitor the model:** Track the model's performance.
 
-    [Source]()
+
+
+    [Source](https://learn.microsoft.com/en-us/training/modules/design-model-deployment-solution/2-understand-how-model-consumed)
     """
     )
 
