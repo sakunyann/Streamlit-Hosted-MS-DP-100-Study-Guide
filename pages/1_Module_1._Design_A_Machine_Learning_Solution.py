@@ -367,13 +367,13 @@ with st.expander("Unit 5/7 - Exercise: Design a model training strategy"):
     ### Activity: Design a model training strategy
     > - Give advice on how to detect diabetes
 
-    | Q No. | Question                                                      | Ask (Hint) 1                  | Ask (Hint) 2                                      | Answer                   |
-    |-------|---------------------------------------------------------------|-------------------------------|---------------------------------------------------|--------------------------|
-    | 1     | How should we train the model to predict diabetes?            | Train classification model using Python. Not using SQL or Spark. | Prefer **notebooks and scripts,** no UI. | Train a model using scikit-learn |
-    | 2     | Which tool should we use to train the diabetes model?         | Currently working in Jupyter notebooks and need a more collaborative tool. | 
-    | 3     |
-    | 4     |
-    | 5     |
+    | Q No. | Question                                                        | Ask (Hint) 1                  | Ask (Hint) 2                                      | Answer                   |
+    |-------|-----------------------------------------------------------------|-------------------------------|---------------------------------------------------|--------------------------|
+    | 1     | How should we train the model to predict diabetes?              | Train classification model using Python. Not using SQL or Spark. | Prefer **notebooks and scripts,** no UI. | Train a model using scikit-learn |
+    | 2     | Which tool should we use to train the diabetes model?           | Currently working in Jupyter notebooks and need a more collaborative tool. | Most comfortable with Python, not experienced with PySpark. Focus on developing and deploying model rather than learning new functions/libraries. | Azure Machine Learning |
+    | 3     | Which compute would you recommend to train the model?           | Anonymized datasets. Develop a model starting with small dataset. Model will eventually be re-trained with more data. | Developing model in Jupyter notebooks. Iteratively training model with different algorithms/hyperparameter values | A compute instance with CPU |
+    | 4     | Which virtual machine size should we use for model development? | Small dataset of 10,000 rows. Using larger dataset later | Plan to use Jupyter notebooks in Azure Machine Learning Studio. Using compute instance only for model development | Standard DS11 v2 |
+    | 5     | How should we train another model to predict skin disorders?    | Plan to hire computer vision expert to train the model. Custom Vision to train custom computer vision model is easy for anyone to use. | Want a skin detection feature prototype. Plan to use unlimited data and computing power | Azure Cognitive Services |
 
 
     [Source](https://learn.microsoft.com/en-us/training/modules/design-machine-learning-model-training-solution/5-exercise)
