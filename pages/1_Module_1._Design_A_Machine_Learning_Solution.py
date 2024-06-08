@@ -410,4 +410,60 @@ with st.expander("Unit 7/7 - Summary"):
     )
 
 
-    
+st.markdown("***")
+st.markdown("""
+### **1.3 Design a model deployment solution**
+***27 min - Module - 5 Units***
+
+"""
+)
+
+with st.expander("Unit 1/5 - Introduction"):
+    st.markdown(
+        """
+
+   
+
+    [Source]()
+    """
+    )
+
+with st.expander("Unit 2/5 - Understand how model will be consumed"):
+    st.markdown(
+        """
+
+   
+
+    [Source]()
+    """
+    )
+
+with st.expander("Unit 3/5 - Decide on real-time or batch deployment"):
+    st.markdown(
+        """
+
+   
+
+    [Source]()
+    """
+    )
+
+with st.expander("Unit 4/5 - Exercise - Design a deployment solution"):
+    st.markdown(
+        """
+
+   
+
+    [Source]()
+    """
+    )
+
+with st.expander("Unit 5/5 - Summary"):
+    st.markdown(
+        """
+
+   
+
+    [Source]()
+    """
+    )
