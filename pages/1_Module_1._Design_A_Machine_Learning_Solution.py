@@ -533,3 +533,66 @@ with st.expander("Unit 5/5 - Summary"):
     [Source](https://learn.microsoft.com/en-us/training/modules/design-model-deployment-solution/5-summary)
     """
     )
+
+    
+st.markdown("***")
+st.markdown("""
+### **1.4 Design a machine learning operations solution**
+***36 min - Module - 6 Units***
+
+"""
+)
+
+with st.expander("Unit 1/6 - Introduction"):
+    st.markdown(
+        """
+    ### Learning objectives
+    #### In this module, you will:
+
+    > - Explore an Machine Learning operations (MLOps) architecture.
+    > - Design for monitoring.
+    > - Design for retraining.
+
+    [Source](https://learn.microsoft.com/en-us/training/modules/design-machine-learning-operations-solution/1-introduction)
+    """
+    )
+
+with st.expander("Unit 2/6 - Explore an MLOps architecture"):
+    st.markdown(
+        """
+
+    [Source]()
+    """
+    )
+
+with st.expander("Unit 3/6 - Design for monitoring"):
+    st.markdown(
+        """
+
+    [Source]()
+    """
+    )
+
+with st.expander("Unit 4/6 - Design for retraining"):
+    st.markdown(
+        """
+
+    [Source]()
+    """
+    )
+
+with st.expander("Unit 5/6 - Knowledge Check"):
+    st.markdown(
+        """
+
+    [Source]()
+    """
+    )
+
+with st.expander("Unit 6/6 - Summary"):
+    st.markdown(
+        """
+
+    [Source]()
+    """
+    )
