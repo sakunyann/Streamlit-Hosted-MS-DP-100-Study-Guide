@@ -465,9 +465,20 @@ with st.expander("Unit 3/5 - Decide on real-time or batch deployment"):
     st.markdown(
         """
 
-   
+    |  | **Real-time Predictions** | **Batch Predictions** |
+    |---|---|---|
+    | **Definition** | Predictions are required immediately when new data is collected. | Predictions are needed when a batch of data is available. |
+    | **Use Cases** | The model scores the new data as soon as it comes in. | The model is scheduled or triggered to score the new data collected over time. |
+    | **Number of Predictions** | The model receives a single row of data and returns a prediction. | The model receives multiple rows of data in one table and returns predictions for each row. |
+    | **Cost of Compute** | Compute that is always available and can return results almost immediately. Continuously consumes compute resources, leading to ongoing costs. | Compute that can handle a large workload and score data in parallel batches using multiple nodes. Can be more cost-effective if a delay of 5-10 minutes is acceptable for immediate predictions. |
+    | **Compute Requirements** | Depends on the complexity of the model. More complex models may require more compute power and processing time. | Depends on the complexity of the model. More complex models may require more compute power and processing time. |
 
-    [Source]()
+    #### Remember, the choice between real-time or batch predictions: 
+    > - doesn’t necessarily depend on how often new data is collected. 
+    > - Instead, it depends on how often and how quickly the predictions need to be generated. 
+    > - Therefore, consider how you’ll deploy your model before deciding on how to train your model.
+
+    [Source](https://learn.microsoft.com/en-us/training/modules/design-model-deployment-solution/3-decide-real-time-batch-deployment)
     """
     )
 
@@ -475,18 +486,50 @@ with st.expander("Unit 4/5 - Exercise - Design a deployment solution"):
     st.markdown(
         """
 
-   
+    ### Proseware's Mobile Application for Faster Disease Diagnosis
 
-    [Source]()
+    > - **Objective**: Proseware is developing a mobile application to help doctors diagnose diseases in patients faster. A doctor can enter the patient's medical data into the app to get a diagnosis.
+    > - **First Planned Feature**: The app will advise the doctor whether the patient should be further screened or treated for diabetes.
+    > - **Data Collection**: Proseware has collected data that correlates with diabetes, such as the number of pregnancies, age, and body mass index (BMI).
+    > - **Model Training**: A team of data scientists is working on training a model that can classify whether a patient is likely to have diabetes.
+    > - **Deployment**: Proseware needs advice on how to deploy the model to integrate it with the mobile application.
+
+    ##### Looking forward to advice on designing the model's deployment solution.
+
+    ### Consider the requirements:
+    | Requirement | Description |
+    |---|---|
+    | **Frequency** |  The plan is that a doctor enters a patient's information into the app, like their age and BMI. After entering, a doctor can select the Analyze button, after which the model should predict whether or not a patient is likely to have diabetes. |
+    | **Compute** | A doctor consultation typically takes less than 10 minutes. If we want doctors to use this app, we need the answers to be returned as quickly as possible. The deployed model should always be available as we don't know when a doctor may use it. |
+    | **Size** | A doctor will only use the app to get a prediction on an individual's situation. There's no need for generating the predictions of multiple patients at once. |
+
+    ---
+
+    ### Propose a solution
+
+    #### Knowledge Check
+
+    1. What type of predictions are needed by the mobile application? 
+    >>> **Real-time predictions**
+    > : There is a need for immediate predictions for individual patients.
+
+    2. What kind of compute should be used by the deployed model?
+    >>> **Containers**
+    > : Containers will be the more cost-effective solution as we want the model to be always available and respond immediately.
+
+    [Source](https://learn.microsoft.com/en-us/training/modules/design-model-deployment-solution/4-knowledge-check)
     """
     )
 
 with st.expander("Unit 5/5 - Summary"):
     st.markdown(
         """
+    ### In this module, you've learned how to:
 
+    > - Identify how a model will be consumed.
+    > - Decide whether to deploy your model to a real-time or batch endpoint.
    
 
-    [Source]()
+    [Source](https://learn.microsoft.com/en-us/training/modules/design-model-deployment-solution/5-summary)
     """
     )
